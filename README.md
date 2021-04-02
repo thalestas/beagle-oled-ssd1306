@@ -8,6 +8,7 @@ It was used Debian Console Image available on [here](https://beagleboard.org/lat
 
 ### The Circuit
 This tutorial uses BeagleBone's I2C1, so the image below shows how to connect the OLED display on Beaglebone:  
+
 ![OLED Display connection](https://raw.githubusercontent.com/thalestas/beagle-oled-ssd1306/main/img/bb_circuit.png)
 
 ### The Setup
