@@ -8,7 +8,7 @@ It was used Debian Console Image available on [here](https://beagleboard.org/lat
 
 ### The Circuit
 This tutorial uses BeagleBone's I2C1, so the image below shows how to connect the OLED display on Beaglebone:  
-![OLED Display connection](img/bb_circuit.png =600x)
+![OLED Display connection](https://github.com/thalestas/beagle-oled-ssd1306/blob/main/img/bb_circuit.png =600x)
 
 ### The Setup
 1. Download ADS1115 DTBO (Device Tree Blob Overlay) available [here](dts/) or you can build it through official overlays beagleboards repo [https://github.com/beagleboard/bb.org-overlays](https://github.com/beagleboard/bb.org-overlays);  
