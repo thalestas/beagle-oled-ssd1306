@@ -6,6 +6,11 @@ Following steps has been made on BeagleBone Black and Gree but it should work on
 
 It was used Debian Console Image available on [here](https://beagleboard.org/latest-images).
 
+### The Circuit
+This tutorial uses BeagleBone's I2C1, so the image below shows how to connect the OLED display on Beaglebone:  
+![OLED Display connection](img/bb_circuit.png =600x)
+
+### The Setup
 1. Download ADS1115 DTBO (Device Tree Blob Overlay) available [here](dts/) or you can build it through official overlays beagleboards repo [https://github.com/beagleboard/bb.org-overlays](https://github.com/beagleboard/bb.org-overlays);  
 You can download through the command below as well:
 ```
@@ -37,5 +42,4 @@ Boot BeagleBone and you should see the U-Boot overlay loading:
 uboot_overlays: loading /lib/firmware/BB-ADC-00A0.dtbo ...
 867 bytes read in 66 ms (12.7 KiB/s)
 ```
-
 4. After Start Kernel, OLED display should start show terminal.
