@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/mman.h>
 #include <fcntl.h>
 #include <stdint.h>
+#include <unistd.h>
+#include <sys/mman.h>
 
 static char *filename = "/dev/fb0";
 
@@ -31,6 +32,9 @@ int main(int argc, char *argv[])
 	}	
 
 	byte[pos] = pixels;	
+
+	munmap(byte, (128/8)*64);
+	close(fd);
 	
 	return 0;
 }
