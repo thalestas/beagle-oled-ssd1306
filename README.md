@@ -55,3 +55,23 @@ uboot_overlays: loading /lib/firmware/BB-ADC-00A0.dtbo ...
 867 bytes read in 66 ms (12.7 KiB/s)
 ```
 4. After Kernel starts, OLED display should show terminal output.
+
+### Set Console Font
+
+Default font size is too big to 128x64 pixels resolution. So, to improve it, we can change the console font.  
+The steps below, describe how to set tom-thumb console font, which it is a 4x6 font.  
+Reference: https://robey.lag.net/2010/01/23/tiny-monospace-font.html
+
+Copy the file ```tom-thumb.psf.gz``` to sdcard:
+```
+$ cp tom-thumb.psf.gz /media/username/rootfs/home/debian/
+```
+To set the font, we are going to use ```setfont``` command, but it is unavailable by default on Debian Console Image. So, we to use that we are going to use busybox.  
+Copy busybox to sdcard using the command below:
+```
+$ cp busybox /media/username/rootfs/home/debian/
+```
+Using OLED console on BeagleBone, set tom-thumb font:
+```
+debian@beaglebone:~$ ./busybox setfont tom-thumb.psf.gz
+```
