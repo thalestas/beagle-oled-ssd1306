@@ -79,6 +79,6 @@ debian@beaglebone:~$ ./busybox setfont tom-thumb.psf.gz
 Image below shows the system version through OLED SSD1306 console display.
 <p align="center">
 <kbd>
-	<img src="https://raw.githubusercontent.com/thalestas/beagle-oled-ssd1306/main/fig/oled_beagle.jpg" width="500">
+	<img src="https://raw.githubusercontent.com/thalestas/beagle-oled-ssd1306/main/fig/oled_beagle.jpg" width="1000">
 </kbd>
 </p>
