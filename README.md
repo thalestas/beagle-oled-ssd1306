@@ -75,3 +75,10 @@ Using OLED console on BeagleBone, set tom-thumb font:
 ```
 debian@beaglebone:~$ ./busybox setfont tom-thumb.psf.gz
 ```
+
+Image below shows the system version through OLED SSD1306 console display.
+<p align="center">
+<kbd>
+	<img src="https://raw.githubusercontent.com/thalestas/beagle-oled-ssd1306/main/fig/oled_beagle.jpg" width="500">
+</kbd>
+</p>
