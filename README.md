@@ -19,18 +19,18 @@ This tutorial uses BeagleBone's I2C1, so the image below shows how to connect th
 1. Download ADS1115 DTBO (Device Tree Blob Overlay) available [here](dts/) or you can build it through official overlays beagleboards repo [https://github.com/beagleboard/bb.org-overlays](https://github.com/beagleboard/bb.org-overlays);  
 You can download through the command below as well:
 ```
-wget https://github.com/thalestas/beagle-oled-ssd1306/raw/main/dts/BB-I2C1-SSD1306.dtbo 
+$ wget https://github.com/thalestas/beagle-oled-ssd1306/raw/main/dts/BB-I2C1-SSD1306.dtbo 
 ```
 
 2. Copy the ADS1115 DTBO to BeagleBone in ```/lib/interface```. For example:
 ```
-cp BB-I2C1-SSD1306.dtbo /media/username/rootfs/lib/firmware/
+$ cp BB-I2C1-SSD1306.dtbo /media/username/rootfs/lib/firmware/
 ```
 Note that ```username``` should be your user.
 
 3. Add the DTBO as U-Boot overlay in uEnv, to do that, open the file below:
 ```
-vim /media/username/rootfs/boot/uEnv.txt
+$ vim /media/username/rootfs/boot/uEnv.txt
 ```
 
 And add the BB-I2C1-SSD1306.dtbo:
@@ -47,4 +47,4 @@ Boot BeagleBone and you should see the U-Boot overlay loading:
 uboot_overlays: loading /lib/firmware/BB-ADC-00A0.dtbo ...
 867 bytes read in 66 ms (12.7 KiB/s)
 ```
-4. After Start Kernel, OLED display should start show terminal.
+4. After Kernel starts, OLED display should show terminal output.
