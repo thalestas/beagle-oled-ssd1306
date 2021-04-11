@@ -6,6 +6,13 @@ Following steps has been made on BeagleBone Black and Gree but it should work on
 
 It was used Debian Console Image available on [here](https://beagleboard.org/latest-images).
 
+It is assumed that SSD1407 device driver is already enabled. On Debian Console Image it is already included built-in.
+You can use the following command to check. It should return ```CONFIG_FB_SSD1307=y```:
+```
+$ zcat /proc/config.gz | grep -i ssd1307
+```
+
+
 ### The Circuit
 This tutorial uses BeagleBone's I2C1, so the image below shows how to connect the OLED display on Beaglebone:  
 
