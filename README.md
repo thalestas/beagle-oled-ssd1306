@@ -31,7 +31,7 @@ $ wget https://github.com/thalestas/beagle-oled-ssd1306/raw/main/dts/BB-I2C1-SSD
 
 2. Copy the ADS1115 DTBO to BeagleBone in ```/lib/interface```. For example:
 ```
-$ cp BB-I2C1-SSD1306.dtbo /media/username/rootfs/lib/firmware/
+$ sudo cp BB-I2C1-SSD1306.dtbo /media/username/rootfs/lib/firmware/
 ```
 Note that ```username``` should be your user.
 
