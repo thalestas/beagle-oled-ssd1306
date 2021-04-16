@@ -82,3 +82,8 @@ Image below shows the system version through OLED SSD1306 console display.
 	<img src="https://raw.githubusercontent.com/thalestas/beagle-oled-ssd1306/main/fig/oled_beagle.jpg" width="1000">
 </kbd>
 </p>
+
+### References 
+[Device Tree Overlay by Adafruit](https://learn.adafruit.com/introduction-to-the-beaglebone-black-device-tree/device-tree-overlays)  
+[foldedtoad - raspberry-pi-oled](https://github.com/foldedtoad/raspberry-pi-oled)  
+[elinux - U-boot Overlays](https://elinux.org/Beagleboard:BeagleBoneBlack_Debian#U-Boot_Overlays)  
